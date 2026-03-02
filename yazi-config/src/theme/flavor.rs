@@ -10,7 +10,9 @@ use crate::error_with_input;
 
 #[derive(Default, Deserialize, DeserializeOver2, Serialize)]
 pub struct Flavor {
+	#[serde(default)]
 	pub dark:  String,
+	#[serde(default)]
 	pub light: String,
 }
 
